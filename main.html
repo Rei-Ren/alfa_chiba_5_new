@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>封鎖された家庭科室からの脱出 │ Project N</title>
+  <title>狂った仮想世界からの脱出│ Project N</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -17,13 +17,13 @@
   </svg>
   <header class="header">
     <div class="container">
-      <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div>
+      <div class="header__logo"><img src="assets/images/スクリーンショット 2021-09-10 21.08.40.png" alt="千葉キャンパスチーム５"></div>
       <div class="header__name">N・S高生制作サイト</div>
     </div>
   </header>
   <main class="main main-page">
     <!-- タイトルエリア　ここから -->
-    <h1 class="main-title"><img src="assets/images/main-image.png" alt="封鎖された家庭科室からの脱出"></h1>
+    <h1 class="main-title"><img src="assets/images/スクリーンショット 2021-09-10 23.17.10.png" alt="狂った仮想世界からの脱出"></h1>
     <!-- タイトルエリア　ここまで -->
     <div id="stage">
 
@@ -33,10 +33,14 @@
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
-            <p class="text-center">まずは、この学校の家庭科室の鍵のありかを知らなければ入ることができない。<br>
-              下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
-            <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>おかしなRPG世界</h2>
+            <p class="text-center">一番最初にリストアップされた世界は有名なゲームのRPGの世界だった。<br>
+              定番な勇者が出てくる作品だが、、自分が知っている勇者ではないようだ。</p>
+             まぁ、なんとも胡散臭く金髪でカタコトな日本語で話していた外人さんだろうか。<br>
+            　　　どうやらこの人がメールに書いてあった主犯の仲間らしい。<br>
+            　　　話しかけると待っていたぞと反応をしとある問題を渡してきた。<br>
+            　 渡された謎を解き、偽勇者に回答を報告しよう。</p>
+            <p class="text-center">困ったときは、相棒に聞いてみよう。</p>
   
             <div class="container">
               <figure class="image__container">
@@ -70,7 +74,7 @@ Youtube貼り付けここまで -->
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
 
-            <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
+            <a class="link-hint" href="hint1.html" target="hint1">相棒に相談してみる？ ></a>
           </div>
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
@@ -84,10 +88,10 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <div class="clear-message__title">STAGE：１  「正解です」</div>
+              <div class="clear-message__content">偽物の勇者が消えこの世界が元に戻った！<br>
+                それと同時に四角のマークがついた鍵を渡された<br>
+                謎をとき、この世界を救おう！</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -106,10 +110,15 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>夜の教室</h2>
+              <p class="text-center">二番にリストアップされた世界は夜の教室だった。<br>
+                 ここは小学校の教室らしい、後ろの壁に飾ってある作品の絵がこっちを見ているように見える。<br>
+                　　　　　、、誰かの忘れ物だろうか、一つの机に女の可愛い人形が置いてある。恐る恐るその場に行くと人形が「こんばんわ」と喋り出した。<br>
+                　　　　驚いて後ろに尻餅をつくと「ようやくきたのね、これあげる」とまた問題らしい物を渡してきた。<br>
+               　　　　 どうやら今回はこの人形がメールに書いてあった主犯の仲間らしい。<br>
+                　　　　早く問題を解いてこの世界から早く出よう、、。<br>
+                  渡された謎を解き、人形に回答を報告しよう。</p>
+                <p class="text-center">困ったときは、相棒に聞こう。</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -135,7 +144,7 @@ Youtube貼り付けここまで -->
                   <!-- STAGE2-1問題セクション　ここまで -->
                   <!-- STAGE2-1解答入力セクション　ここから -->
                   <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
-                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+                  <a class="link-hint" href="hint2.html" target="hint2">相棒に相談してみる？></a>
                   <!-- STAGE2-1解答入力セクション　ここまで -->
                 </div><!-- /.column -->
                 <!-- STAGE2-1　ここまで -->
@@ -180,9 +189,9 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__title">STAGE：2　 「あら、おめでとう」</div>
+              <div class="clear-message__content">後から物音がして少し振り返ってまた人形がいた位置を見ると人形はいなくなっていて丸いマークの鍵だけが置いてあった。<br>
+                急いで次の世界へ行こう！</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -197,10 +206,13 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>家庭科室の課題とは</h2>
-            <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
-              どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
-              これらを解決するための最後の謎を解いていこう！</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>部活の時間</h2>
+            <p class="text-center">最後の世界は学校の体育館<br>
+              ボールが落ちていてバレーやバスケットボールなどの部活をしているらしい。<br>
+              有名なスポーツ漫画の世界らしい。違いはすぐにわかった。主人公の相棒な立場のキャラクターが違う。<br>
+           　　　　 すぐに目に入ったのであちらも正体がバレたことに気づいているだろう。<br>
+           　　　　 反応は思ったより早かった「もうバレちゃった〜」と軽くいうと「もうわかってると思うから」と言って問題を渡してきた。<br>
+              リストアップされた世界はこれで最後これが終わればきっと何か変わるはず！問題に挑もう！</p>
             <figure class="image__container">
               <img src="assets/images/stage.png" alt="">
             </figure>
